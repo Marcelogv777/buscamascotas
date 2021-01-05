@@ -48,7 +48,7 @@
                     android:text="TextView" />
 
                 <Button
-                    android:id="@+id/eliminarDispositivo"
+                    android:id="@+id/contactar"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_marginLeft="5dp"

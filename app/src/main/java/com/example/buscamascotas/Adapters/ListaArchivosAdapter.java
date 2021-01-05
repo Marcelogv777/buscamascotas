@@ -3,6 +3,7 @@ package com.example.buscamascotas.Adapters;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Environment;
 import android.util.Log;
 import android.view.ContextMenu;
@@ -92,11 +93,18 @@ public class ListaArchivosAdapter extends RecyclerView.Adapter<ListaArchivosAdap
 
 
         }
+        holder.contactar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String cel = dispositivo.getCelular();
+                Toast.makeText(context, "llame a "+ cel, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView txtNombre, txtCaracteristicas;
-        Button detalles, editarDispositivo, eliminarDispositivo;
+        Button detalles, editarDispositivo, eliminarDispositivo, contactar;
         ImageView imagenDispositivo;
         StorageReference reference;
 
@@ -107,6 +115,7 @@ public class ListaArchivosAdapter extends RecyclerView.Adapter<ListaArchivosAdap
             imagenDispositivo = itemView.findViewById(R.id.imgDispositivo);
             txtNombre= itemView.findViewById(R.id.nombreEnLista);
             txtCaracteristicas = itemView.findViewById(R.id.caracteristicasEnLista);
+            contactar = itemView.findViewById(R.id.contactar);
         }
     }
 

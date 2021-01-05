@@ -57,13 +57,14 @@ public class RegistroMascota extends AppCompatActivity {
         setContentView(R.layout.activity_registro_mascota);
         // Creando carpeta mascotas (solo la primera vez) y agregando mascotas a esta
 
-        final EditText nombre, caracteristicas;
+        final EditText nombre, caracteristicas, celular;
         final Button agregarDispositivo, cargarFoto, tomarFoto;
         ImageView imagenDispositivo;
 
         final DatabaseReference userDatabase = FirebaseDatabase.getInstance().getReference().child("dispositivos");
 
         nombre = (EditText) findViewById(R.id.nombre);
+        celular = (EditText) findViewById(R.id.celular);
         caracteristicas = (EditText) findViewById(R.id.caracteristicas);
         imagenDispositivo = (ImageView) findViewById(R.id.imagenDeDispositivoAAgregar);
         agregarDispositivo = (Button) findViewById(R.id.agregarDispositivoAInventario);
@@ -83,10 +84,11 @@ public class RegistroMascota extends AppCompatActivity {
                 //push a la base de datos
 
 
-                if(nombre.getText()!=null && caracteristicas.getText()!=null ){
+                if(nombre.getText()!=null && caracteristicas.getText()!=null&&celular.getText()!=null){
                     Dispositivo d = new Dispositivo();
                     d.setCaracteristicas(caracteristicas.getText().toString());
                     d.setNombre(nombre.getText().toString());
+                    d.setCelular(celular.getText().toString());
                     //userDatabase.push().setValue(d);
                     DatabaseReference newRef =  userDatabase.push();
                     d.setId(newRef.getKey());

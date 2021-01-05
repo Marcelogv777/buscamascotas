@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 new AuthUI.IdpConfig.GoogleBuilder().build()
         );
         AuthUI instance = AuthUI.getInstance();
-        Intent intent = instance.createSignInIntentBuilder().setLogo(R.mipmap.ic_launcher).setAvailableProviders(proveedores).build();
+        Intent intent = instance.createSignInIntentBuilder().setLogo(R.mipmap.ic_launcher_mascotas).setAvailableProviders(proveedores).build();
         startActivityForResult(intent, 1);
     }
 

@@ -7,6 +7,7 @@ public class Dispositivo implements Serializable {
     private String caracteristicas;
     private String imagen;
     private String id;
+    private String celular;
 
 
     public String getNombre() {
@@ -39,5 +40,13 @@ public class Dispositivo implements Serializable {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getCelular() {
+        return celular;
+    }
+
+    public void setCelular(String celular) {
+        this.celular = celular;
     }
 }

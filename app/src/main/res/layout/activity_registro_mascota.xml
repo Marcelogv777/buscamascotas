@@ -15,15 +15,24 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/celular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Celular"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
             android:id="@+id/nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:ems="10"
-            android:inputType="textPersonName"
             android:hint="Nombre"
-            app:layout_constraintEnd_toEndOf="parent"
-            />
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <EditText
             android:id="@+id/caracteristicas"
