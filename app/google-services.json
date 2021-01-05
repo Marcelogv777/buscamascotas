@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "49399060776",
+    "firebase_url": "https://buscamascotas-c4f52-default-rtdb.firebaseio.com",
+    "project_id": "buscamascotas-c4f52",
+    "storage_bucket": "buscamascotas-c4f52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49399060776:android:14b79aec83c4efbdd6581d",
+        "android_client_info": {
+          "package_name": "com.example.buscamascotas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49399060776-61j9d976dddsothtntn53svr1o2lk64h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.buscamascotas",
+            "certificate_hash": "718db12644cef8c4903000b00c612a473c0a6c22"
+          }
+        },
+        {
+          "client_id": "49399060776-trlcu0ae203skb90noclbkudvfcmfv8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvoELcsx7O3qT2WJu8Zc8MOvjHB7NEiOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49399060776-trlcu0ae203skb90noclbkudvfcmfv8a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
